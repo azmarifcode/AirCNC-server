@@ -40,7 +40,7 @@ async function run() {
         const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET_KEY, { expiresIn: '1h' })
         console.log(token);
         res.send({result, token}) 
-        })
+        }) 
 
         console.log('Database Connected...');
     } finally {
